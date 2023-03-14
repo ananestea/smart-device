@@ -1,0 +1,32 @@
+.main-header {
+  width: 100%;
+  min-height: 120px;
+  position: sticky;
+  top: 0;
+  background: linear-gradient(180deg, $black-pearl 84.9%, rgba(4, 24, 39, 0) 100%);
+  color: $alice-blue;
+
+  @media (max-width: $tablet-width) {
+    min-height: 100px;
+    position: relative;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-height: 70px;
+  }
+}
+
+.main-header-wrapper {
+  margin: 0 auto;
+  height: 100%;
+  max-width: 1320px;
+  padding: 16px 50px 0;
+
+  @media (max-width: $tablet-width) {
+    padding: 20px 70px 25px 50px ;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 10px 35px 20px 26px;
+  }
+}

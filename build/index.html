@@ -13,36 +13,38 @@
 <body>
   <div class="page">
     <header class="main-header">
-      <nav class="main-header__navigation navigation">
-        <a class="navigation__logo" href="index.html">
-          <div class="navigation__logo-wrapper">
-            <picture>
-              <source media="(max-width: 767px)" srcset="img/logo-mobile.svg">
-              <img src="img/logo-desktop.svg" width="215" height="55"
-                alt="Иконка логотипа Smart Device.">
-            </picture>
-          </div>
-        </a>
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a class="navigation__link" href="mailto:info@sd.ru">
-              <svg aria-hidden="true" focusable="false" width="20" height="20">
-                <use xlink:href="./img/sprite.svg#icon-mail"></use>
-              </svg>
-              <p>info@sd.ru</p>
-            </a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="tel:+74950005252">
-              <svg aria-hidden="true" focusable="false" width="20" height="20">
-                <use xlink:href="./img/sprite.svg#icon-tel"></use>
-              </svg>
-              <p>+7 (495) 000 52 52</p>
-            </a>
-          </li>
-        </ul>
-        <a href="#" class="button navigation__button" data-open-modal="main-modal">Заказать звонок</a>
-      </nav>
+      <div class="main-header-wrapper">
+        <nav class="main-header__navigation navigation">
+          <a class="navigation__logo" href="index.html">
+            <div class="navigation__logo-wrapper">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/logo-mobile.svg">
+                <img src="img/logo-desktop.svg" width="215" height="55"
+                  alt="Иконка логотипа Smart Device.">
+              </picture>
+            </div>
+          </a>
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="mailto:info@sd.ru">
+                <svg aria-hidden="true" focusable="false" width="20" height="20">
+                  <use xlink:href="./img/sprite.svg#icon-mail"></use>
+                </svg>
+                <p>info@sd.ru</p>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="tel:+74950005252">
+                <svg aria-hidden="true" focusable="false" width="20" height="20">
+                  <use xlink:href="./img/sprite.svg#icon-tel"></use>
+                </svg>
+                <p>+7 (495) 000 52 52</p>
+              </a>
+            </li>
+          </ul>
+          <a href="#" class="button navigation__button" data-open-modal="main-modal">Заказать звонок</a>
+        </nav>
+      </div>
     </header>
 
     <main class="main-container">
@@ -231,119 +233,118 @@
         </div>
       </section>
     </main>
-
-    <footer class="footer-container">
-      <section class="about-us">
-        <h2 class="about-us__title visually-hidden">О нас</h2>
-        <div class="about-us-container">
-          <div class="about-us__social social">
-            <a class="social__logo" href="index.html">
-              <div class="social__logo-holder">
-                <picture>
-                  <source media="(min-width: 768px)" srcset="img/logo-tablet-footer.svg">
-                  <img class="social__logo-image" src="img/logo-tablet.svg" width="32" height="36"
-                    alt="Иконка логотипа Smart device.">
-                </picture>
-              </div>
-            </a>
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link" href="#">
-                  <svg class="social__icon" fill="currentColor" aria-hidden="true" focusable="false" width="30"
-                    height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="./img/icons/stack.svg#ok-icon"></use>
-                  </svg>
-                  <span class="visually-hidden">Одноклассники.</span>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link" href="https://vk.com/htmlacademy">
-                  <svg class="social__icon" fill="currentColor" aria-hidden="true" focusable="false" width="30"
-                    height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="./img/icons/stack.svg#vk-icon"></use>
-                  </svg>
-                  <span class="visually-hidden">Вконтакте.</span>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link" href="#">
-                  <svg class="social__icon" fill="currentColor" aria-hidden="true" focusable="false" width="30"
-                    height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="./img/icons/stack.svg#pinterest-icon"></use>
-                  </svg>
-                  <span class="visually-hidden">Пинтерест.</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="about-us__group about-us__group--site accordion">
-            <div class="accordion__wrapper">
-              <h3>Разделы сайта</h3>
-              <button class="accordion__button accordion__button--no-js" type="button">
-                <span class="visually-hidden">Свернуть / Развернуть</span>
-              </button>
+  </div>
+  <footer class="footer-container">
+    <section class="about-us">
+      <h2 class="about-us__title visually-hidden">О нас</h2>
+      <div class="about-us-container">
+        <div class="about-us__social social">
+          <a class="social__logo" href="index.html">
+            <div class="social__logo-holder">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/logo-tablet-footer.svg">
+                <img class="social__logo-image" src="img/logo-tablet.svg" width="32" height="36"
+                  alt="Иконка логотипа Smart device.">
+              </picture>
             </div>
-            <ul class="accordion__list accordion__list-nav accordion__list--no-js">
-              <li class="accordion__item">
-                <a class="accordion__link" href="#">О компании</a>
-              </li>
-              <li class="accordion__item">
-                <a class="accordion__link" href="#">Продукты</a>
-              </li>
-              <li class="accordion__item">
-                <a class="accordion__link" href="#">Производство печатных плат</a>
-              </li>
-              <li class="accordion__item">
-                <a class="accordion__link" href="#">Монтаж печатных плат</a>
-              </li>
-              <li class="accordion__item">
-                <a class="accordion__link" href="#">Комплектующие</a>
-              </li>
-              <li class="accordion__item">
-                <a class="accordion__link" href="#">Доставка</a>
-              </li>
-              <li class="accordion__item">
-                <a class="accordion__link" href="#">Контакты</a>
-              </li>
-            </ul>
-          </div>
-          <div class="about-us__group about-us__group--contacts accordion">
-            <div class="accordion__wrapper">
-              <h3>Наш офис</h3>
-              <button class="accordion__button accordion__button--no-js" type="button">
-                <span class="visually-hidden">Свернуть / Развернуть</span>
-              </button>
-            </div>
-            <ul class="accordion__list accordion__list--no-js">
-              <li class="accordion__item">
-                <a class="accordion__link" href="#">г. Мытищи, Олимпийский проспект, д.10</a>
-              </li>
-              <li class="accordion__item">
-                <a class="accordion__link accordion__link--phone" href="tel:+7(495)589-40-50">+7 (495) 589-40-50</a>
-              </li>
-              <li class="accordion__item">
-                <a class="accordion__link accordion__link--phone" href="tel:+7(925)389-58-29">+7 (925) 389-58-29</a>
-              </li>
-              <li class="accordion__item">
-                <a class="accordion__link accordion__link--phone" href="tel:+7(925)364-78-13">+7 (925) 364-78-13</a>
-              </li>
-            </ul>
-          </div>
+          </a>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg class="social__icon" fill="currentColor" aria-hidden="true" focusable="false" width="30"
+                  height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="./img/icons/stack.svg#ok-icon"></use>
+                </svg>
+                <span class="visually-hidden">Одноклассники.</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://vk.com/htmlacademy">
+                <svg class="social__icon" fill="currentColor" aria-hidden="true" focusable="false" width="30"
+                  height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="./img/icons/stack.svg#vk-icon"></use>
+                </svg>
+                <span class="visually-hidden">Вконтакте.</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg class="social__icon" fill="currentColor" aria-hidden="true" focusable="false" width="30"
+                  height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="./img/icons/stack.svg#pinterest-icon"></use>
+                </svg>
+                <span class="visually-hidden">Пинтерест.</span>
+              </a>
+            </li>
+          </ul>
         </div>
-      </section>
-    </footer>
-    <div class="modal" data-modal="main-modal">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
+
+        <div class="about-us__group about-us__group--site accordion">
+          <div class="accordion__wrapper">
+            <h3>Разделы сайта</h3>
+            <button class="accordion__button accordion__button--no-js" type="button">
+              <span class="visually-hidden">Свернуть / Развернуть</span>
+            </button>
+          </div>
+          <ul class="accordion__list accordion__list-nav accordion__list--no-js">
+            <li class="accordion__item">
+              <a class="accordion__link" href="#">О компании</a>
+            </li>
+            <li class="accordion__item">
+              <a class="accordion__link" href="#">Продукты</a>
+            </li>
+            <li class="accordion__item">
+              <a class="accordion__link" href="#">Производство печатных плат</a>
+            </li>
+            <li class="accordion__item">
+              <a class="accordion__link" href="#">Монтаж печатных плат</a>
+            </li>
+            <li class="accordion__item">
+              <a class="accordion__link" href="#">Комплектующие</a>
+            </li>
+            <li class="accordion__item">
+              <a class="accordion__link" href="#">Доставка</a>
+            </li>
+            <li class="accordion__item">
+              <a class="accordion__link" href="#">Контакты</a>
+            </li>
+          </ul>
         </div>
+        <div class="about-us__group about-us__group--contacts accordion">
+          <div class="accordion__wrapper">
+            <h3>Наш офис</h3>
+            <button class="accordion__button accordion__button--no-js" type="button">
+              <span class="visually-hidden">Свернуть / Развернуть</span>
+            </button>
+          </div>
+          <ul class="accordion__list accordion__list--no-js">
+            <li class="accordion__item">
+              <a class="accordion__link" href="#">г. Мытищи, Олимпийский проспект, д.10</a>
+            </li>
+            <li class="accordion__item">
+              <a class="accordion__link accordion__link--phone" href="tel:+7(495)589-40-50">+7 (495) 589-40-50</a>
+            </li>
+            <li class="accordion__item">
+              <a class="accordion__link accordion__link--phone" href="tel:+7(925)389-58-29">+7 (925) 389-58-29</a>
+            </li>
+            <li class="accordion__item">
+              <a class="accordion__link accordion__link--phone" href="tel:+7(925)364-78-13">+7 (925) 364-78-13</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <div class="modal" data-modal="main-modal">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+        <p class="modal__description">Обычная модалка</p>
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="15" height="15">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
       </div>
     </div>
   </div>
