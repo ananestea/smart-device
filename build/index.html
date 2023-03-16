@@ -192,6 +192,13 @@
 
       <section class="form" id="form">
         <div class="form__container" data-form-validate>
+          <div class="form__image">
+            <picture>
+              <source type="image/webp" srcset="img/form/paper-airplane.webp 1x, img/form/paper-airplane@2x.webp 2x">
+              <img src="img/form/paper-airplane.png" srcset="img/form/paper-airplane@2x.png 2x" width="510" height="285"
+                alt="Самолётик из бумаги.">
+            </picture>
+          </div>
           <form action="https://echo.htmlacademy.ru/" method="post">
             <div class="form__heading-wrapper">
               <h2>Остались вопросы? Задайте их нам!</h2>
@@ -199,14 +206,12 @@
             </div>
             <div class="form__input-wrapper">
               <div class="form__input form__input--username">
-                <label for="username" data-validate-type="text" data-required
-                  data-message-base="Поле обязательно к заполнению">
+                <label for="username" data-validate-type="text" data-required data-message-base="Поле обязательно к заполнению">
                   <input type="text" name="username" id="username" placeholder="Имя" required>
                 </label>
               </div>
               <div class="form__input form__input--userphone">
-                <label for="userphone" data-validate-type="phone" data-required
-                  data-message-base="Поле обязательно к заполнению">
+                <label for="userphone" data-validate-type="phone" data-required data-message-base="Поле обязательно к заполнению">
                   <input type="tel" name="userphone" id="userphone" placeholder="Телефон" required>
                 </label>
               </div>
@@ -215,13 +220,13 @@
                   <textarea name="question" id="question" placeholder="Ваш вопрос" rows="5"></textarea>
                 </label>
               </div>
+              <button class="form__input form__input--button" type="submit">Задать вопрос</button>
               <div class="form__input form__input--agreement">
                 <label for="agreement" data-validate-type="checkbox" data-required>
                   <input type="checkbox" name="agreement" id="agreement" required checked>
                   <span>Я согласен нa обработку персональных данных</span>
                 </label>
               </div>
-              <button class="form__input form__input--button" type="submit">Задать вопрос</button>
             </div>
           </form>
         </div>
