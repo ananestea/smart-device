@@ -68,6 +68,11 @@
       width: 100%;
       padding: 20px;
     }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__button-close{
@@ -75,6 +80,7 @@
     top: 22px;
     right: 22px;
     z-index: 1;
+    color: $color-default-white;
 
     width: 40px;
     height: 40px;
@@ -83,6 +89,85 @@
     background: $color-transparent;
     border: none;
     cursor: pointer;
+  }
+
+  &__button-check {
+    font-family: $pt-mono;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    opacity: 0.8;
+    display: flex;
+    order: 3;
+
+    label {
+      display: flex;
+      align-items: center;
+      padding-top: 13px;
+    }
+
+    input {
+      appearance: none;
+      display: block;
+      position: relative;
+      width: 20px;
+      height: 15px;
+      margin-right: 10px;
+      border: 1px solid $color-default-white;
+      border-radius: 1px;
+      cursor: pointer;
+      padding: 0;
+      background-color: transparent;
+      margin-left: 5px;
+
+      &:checked {
+        &::after {
+          content: "";
+          position: absolute;
+          top: 13%;
+          left: 13%;
+          display: block;
+          width: 7px;
+          height: 5px;
+          border: 1px solid $color-default-white;
+          border-right: none;
+          border-top: none;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+
+  &__button-submit {
+    background: $black-pearl;
+    width: 100%;
+    font-family: $roboto-condensed;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $color-default-white;
+    border-radius: 3px;
+    padding: 15px 25px;
+    cursor: pointer;
+    display: inline-block;
+    border: 1px solid transparent;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      border: 1px solid $black-pearl;
+      background-color: rgba($black-pearl, 0.8);
+    }
+
+    &:active,
+    &:focus-within {
+      outline: none;
+      background-color: rgba($black-pearl, 0.5);
+    }
+
   }
 
   &--responsive {
@@ -140,5 +225,81 @@
     margin: 0;
     padding: 0;
     border: 0;
+  }
+}
+
+.modal__input {
+  margin-bottom: 20px;
+  &--question {
+    margin-bottom: 25px;
+  }
+
+
+  input {
+    width: 100%;
+    font-family: $pt-mono;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-default-white;
+    padding: 15px;
+    box-sizing: border-box;
+    background: rgba(4, 20, 39, 0.15);
+    border: 1px solid transparent;
+    border-radius: 3px;
+
+    &::placeholder {
+      font-family: $pt-mono;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      color: $color-default-white;
+    }
+
+    &:hover,
+    &:focus {
+      outline: none;
+      border: 1px solid $black-pearl;
+    }
+
+    &:active,
+    &:focus-within {
+      outline: none;
+      background-color: rgba($black-pearl, 0.5);
+    }
+  }
+
+  textarea {
+    width: 100%;
+    font-family: $pt-mono;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-default-white;
+    padding: 15px;
+    box-sizing: border-box;
+    background: rgba(4, 20, 39, 0.15);
+    border: 1px solid transparent;
+    border-radius: 3px;
+
+    &::placeholder {
+      font-family: $pt-mono;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      color: $color-default-white;
+    }
+
+    &:hover,
+    &:focus {
+      outline: none;
+      border: 1px solid $black-pearl;
+    }
+
+    &:active,
+    &:focus-within {
+      outline: none;
+      background-color: rgba($black-pearl, 0.5);
+    }
   }
 }

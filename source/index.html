@@ -64,7 +64,7 @@
         <h2 class="advantages__title visually-hidden">Главные причины выбрать Smart device</h2>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--speed">
-            <svg aria-hidden="true" focusable="false" width="35" height="35">
+            <svg aria-hidden="true" focusable="false" width="35" height="35" fill="currentColor">
               <use xlink:href="./img/sprite.svg#icon-speed"></use>
             </svg>
             <h3>Оперативные сроки</h3>
@@ -199,7 +199,7 @@
                 alt="Самолётик из бумаги.">
             </picture>
           </div>
-          <form action="https://echo.htmlacademy.ru/" method="post">
+          <form action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
             <div class="form__heading-wrapper">
               <h2>Остались вопросы? Задайте их нам!</h2>
               <p>Мы проконсультируем Вас бесплатно</p>
@@ -211,8 +211,8 @@
                 </label>
               </div>
               <div class="form__input form__input--userphone">
-                <label for="userphone" data-validate-type="phone" data-required data-message-base="Поле обязательно к заполнению">
-                  <input type="tel" name="userphone" id="userphone" placeholder="Телефон" required>
+                <label for="phone" data-validate-type="phone" data-required data-message-base="Поле обязательно к заполнению">
+                  <input type="tel" name="phone" id="phone" placeholder="Телефон" required>
                 </label>
               </div>
               <div class="form__input form__input--question">
@@ -220,13 +220,13 @@
                   <textarea name="question" id="question" placeholder="Ваш вопрос" rows="5"></textarea>
                 </label>
               </div>
-              <button class="form__input form__input--button" type="submit">Задать вопрос</button>
               <div class="form__input form__input--agreement">
                 <label for="agreement" data-validate-type="checkbox" data-required>
                   <input type="checkbox" name="agreement" id="agreement" required checked>
                   <span>Я согласен нa обработку персональных данных</span>
                 </label>
               </div>
+              <button class="form__input form__input--button" type="submit">Задать вопрос</button>
             </div>
           </form>
         </div>
@@ -286,7 +286,7 @@
               </button>
             </div>
             <ul class="accordion__list accordion__list-site accordion__list--no-js accordion__list--closed">
-              <div class="accordion__content-wrapper">
+              <ul class="accordion__content-wrapper">
                 <li class="accordion__content">
                   <a class="accordion__link" href="#">О компании</a>
                 </li>
@@ -299,8 +299,8 @@
                 <li class="accordion__content">
                   <a class="accordion__link" href="#">Монтаж печатных плат</a>
                 </li>
-              </div>
-              <div class="accordion__content-wrapper">
+              </ul>
+              <ul class="accordion__content-wrapper">
                 <li class="accordion__content">
                   <a class="accordion__link" href="#">Комплектующие</a>
                 </li>
@@ -310,7 +310,7 @@
                 <li class="accordion__content">
                   <a class="accordion__link" href="#">Контакты</a>
                 </li>
-              </div>
+              </ul>
             </ul>
           </div>
         </div>
@@ -355,11 +355,11 @@
             <use xlink:href="img/sprite.svg#icon-close"></use>
           </svg>
         </button>
-        <form action="https://echo.htmlacademy.ru/" method="post">
+        <form action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
           <fieldset class="modal__fieldset">
             <div class="modal__input modal__input--name" data-validate-type="text" data-required data-message-base="Обязательное поле">
               <label class="visually-hidden" for="name-modal">Имя</label>
-              <input type="text" placeholder="Имя" name="name" id="name-modal" required>
+              <input type="text" placeholder="Имя" name="name" id="name-modal" required autofocus>
             </div>
             <div class="modal__input modal__input--phone" data-validate-type="phone" data-required data-message-base="Обязательное поле">
               <label class="visually-hidden" for="phone-modal">Телефон</label>
@@ -370,11 +370,13 @@
               <textarea placeholder="Ваш вопрос" name="question" rows="5" id="question-modal"></textarea>
             </div>
           </fieldset>
-          <button class="modal__button-submit" type="submit">Отправить</button>
           <div class="modal__button-check" data-validate-type="checkbox" data-required>
-            <label for="agreement-modal">Я согласен на обработку  персональных данных</label>
-            <input type="checkbox" name="agreement" value="yes" id="agreement-modal" required checked>
+            <label for="agreement-modal" data-validate-type="checkbox" data-required>
+              <input  type="checkbox" name="agreement" value="yes" id="agreement-modal" required checked>
+              <span>Я согласен нa обработку персональных данных</span>
+            </label>
           </div>
+          <button class="modal__button-submit" type="submit">Отправить</button>
         </form>
       </div>
     </div>
