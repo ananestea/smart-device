@@ -1,0 +1,128 @@
+.about {
+  padding-bottom: 101px;
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 80px;
+  }
+}
+
+.about__wrapper {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+
+  @media (max-width: $mobile-width) {
+    padding-left: 25px;
+    padding-right: 25px;
+    display: block;
+  }
+}
+
+.about__hidden {
+  overflow: hidden;
+  max-height: 0;
+  margin-bottom: 40px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 12px;
+  }
+}
+
+.about__hidden-mobile {
+  @media (max-width: $mobile-width) {
+    overflow: hidden;
+    max-height: 0;
+  }
+}
+
+.about__text {
+  width: 80%;
+  max-width: 970px;
+  margin-left: auto;
+
+  @media (max-width: $tablet-width) {
+    margin-left: 37px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  p {
+    font-family: $pt-mono;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $black-pearl;
+    margin: 0;
+
+    &:nth-child(even) {
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: $mobile-width) {
+      font-size: 14px;
+      line-height: 19px;
+    }
+  }
+
+  h2 {
+    font-family: $roboto-condensed;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 51px;
+    color: $black-pearl;
+    margin: 0;
+    margin-bottom: 15px;
+    max-width: 970px;
+    margin-left: auto;
+
+    @media (max-width: $mobile-width) {
+      font-size: 28px;
+      line-height: 39px;
+    }
+  }
+}
+
+.about__button {
+  font-family: $roboto-condensed;
+  box-sizing: border-box;
+  width: 180px;
+  font-weight: 700;
+  color: $deep-sky-blue;
+  background-color: transparent;
+  border: 1px solid $deep-sky-blue;
+  border-radius: 3px;
+  padding: 14px 13px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  @media (max-width: $mobile-width) {
+    width: 159px;
+    padding: 9px 12px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+    background-color: $black-pearl;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.about__image {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}

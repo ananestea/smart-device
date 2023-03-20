@@ -5,21 +5,29 @@
 
   @media (max-width: $tablet-width) {
     padding: 80px 50px;
+    padding-bottom: 75px;
   }
 
   @media (max-width: $mobile-width) {
     padding: 50px 25px;
+    padding-bottom: 32px;
   }
 }
 
 .advantages__list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 31px;
+  column-gap: 59px;
   row-gap: 30px;
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-left: -29px;
+
+  @media (max-width: $tablet-width) {
+    margin-left: 0;
+    column-gap: 27px;
+  }
 
   @media (max-width: $mobile-width) {
     grid-template-columns: 1fr;
@@ -28,7 +36,11 @@
 
 .advantages__item svg {
   color: $deep-sky-blue;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 9px;
+  }
 }
 
 .advantages__item {
@@ -36,13 +48,17 @@
   box-shadow: inset 5px 0 0 0 $deep-sky-blue;
   color: $deep-sky-blue;
   min-height: 300px;
+  padding-right: 21px;
 
   @media (max-width: $tablet-width) {
     min-height: 360px;
+    padding-right: 45px;
+    padding-bottom: 29px;
   }
 
   @media (max-width: $mobile-width) {
     padding: 30px 30px 35px;
+    min-height: 336px;
   }
 
   h3 {
@@ -53,6 +69,10 @@
     line-height: 34px;
     color: inherit;
     margin-bottom: 15px;
+
+    @media (max-width: $tablet-width) {
+      margin-bottom: 8px;
+    }
 
     @media (max-width: $mobile-width) {
       font-size: 20px;
@@ -66,6 +86,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
+    color: $black-pearl;
 
     @media (max-width: $mobile-width) {
       font-size: 14px;
@@ -76,6 +97,10 @@
   &:hover {
     background-color: $deep-sky-blue;
     color: $alice-blue;
+
+    p {
+      color: inherit;
+    }
 
     svg {
       color: $alice-blue;

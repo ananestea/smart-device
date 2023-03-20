@@ -1,19 +1,19 @@
 const aboutParent = document.querySelector('[data-accordion="parent"]');
-const accordionElement = aboutParent.querySelector('[data-accordion="element"]');
-const accordionButton = aboutParent.querySelector('[data-accordion="button"]');
+const aboutElement = aboutParent.querySelector('[data-accordion="element"]');
+const aboutButton = aboutParent.querySelector('[data-accordion="button"]');
 
 const accordionButtonToggler = () => {
-  if (!accordionElement.classList.contains('is-active')) {
-    accordionButton.textContent = 'свернуть';
+  if (!aboutElement.classList.contains('is-active')) {
+    aboutButton.textContent = 'свернуть';
   } else {
-    accordionButton.textContent = 'подробнее';
+    aboutButton.textContent = 'подробнее';
   }
 };
 
-const executeAboutButton = () => {
-  if (aboutParent && accordionButton && accordionElement) {
-    accordionButton.addEventListener('click', accordionButtonToggler);
+const initReadMoreButon = () => {
+  if (aboutParent && aboutButton && aboutElement) {
+    aboutButton.addEventListener('click', accordionButtonToggler);
   }
 };
 
-export {executeAboutButton};
+export {initReadMoreButon};

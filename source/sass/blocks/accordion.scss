@@ -8,7 +8,7 @@
 
     @media (max-width: $tablet-width) {
       flex-direction: column;
-      width: 220px;
+      width: 300px;
     }
   }
 
@@ -25,7 +25,11 @@
 }
 
 .accordion__content {
-  margin-bottom: 5px;
+  margin-bottom: 7px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 5px;
+  }
 }
 
 .accordion__link {
@@ -36,6 +40,15 @@
   line-height: 22px;
   color: $color-default-white;
   opacity: 0.7;
+
+  &:hover,
+  &:focus {
+    opacity: 0.9;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .accordion__wrapper {
@@ -86,7 +99,12 @@
 }
 
 .accordion {
-  margin-right: 5px;
+  margin-right: -10px;
+  padding-top: 5px;
+
+  @media (max-width: $tablet-width) {
+    margin-right: -36px;
+  }
 
   h3 {
     font-family: $roboto-condensed;
@@ -104,11 +122,17 @@
   }
 
   @media (max-width: $mobile-width) {
-    border-top: 1px solid rgba(248,253,255,.7);
-    border-bottom: 1px solid rgba(248,253,255,.7);
+    border-top: 1px solid rgba(248, 253, 255, 0.7);
+    border-bottom: 1px solid rgba(248, 253, 255, 0.7);
     width: 100%;
     height: 100%;
     padding-bottom: 10px;
+  }
+}
+
+.accordion__item {
+  &:not(:first-child) {
+    max-width: 355px;
   }
 }
 
@@ -116,8 +140,17 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+  width: 50%;
 
-  :first-child {
+  @media (max-width: $tablet-width) {
+    width: 75%;
+  }
+
+  &:first-child {
     margin-right: 30px;
+  }
+
+  &:last-child {
+    margin-left: 5px;
   }
 }

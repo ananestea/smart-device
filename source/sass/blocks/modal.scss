@@ -5,12 +5,10 @@
   bottom: 0;
   left: 0;
   z-index: 1000;
-
   display: flex;
   flex-direction: column;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-
   background-color: rgba($color-default-black, 0.8);
   transform: scale(1.2);
   visibility: hidden;
@@ -21,7 +19,6 @@
     visibility $trans-modal;
 
   pointer-events: none;
-
   -ms-overflow-style: none;
   scrollbar-width: none;
 
@@ -58,11 +55,12 @@
 
   &__content {
     position: relative;
-
     width: 500px;
     padding: 40px;
     color: $color-default-white;
     background-color: $deep-sky-blue;
+    top: -154px;
+    left: -10px;
 
     @include vp-767 {
       width: 100%;
@@ -75,17 +73,15 @@
     }
   }
 
-  &__button-close{
+  &__button-close {
     position: absolute;
-    top: 22px;
-    right: 22px;
+    top: 19px;
+    right: 14px;
     z-index: 1;
     color: $color-default-white;
-
     width: 40px;
     height: 40px;
     padding: 0;
-
     background: $color-transparent;
     border: none;
     cursor: pointer;
@@ -167,7 +163,6 @@
       outline: none;
       background-color: rgba($black-pearl, 0.5);
     }
-
   }
 
   &--responsive {
@@ -230,6 +225,7 @@
 
 .modal__input {
   margin-bottom: 20px;
+
   &--question {
     margin-bottom: 25px;
   }

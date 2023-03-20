@@ -1,7 +1,7 @@
 .about-us {
   margin: 0 auto;
   height: 100%;
-  max-width: 1220px;
+  max-width: 1320px;
   padding: 50px;
   padding-bottom: 55px;
   color: $color-default-white;
@@ -31,7 +31,7 @@
     width: 470px;
 
     @media (max-width: $tablet-width) {
-      width: 220px;
+      width: 300px;
     }
 
     @media (max-width: $mobile-width) {
@@ -41,5 +41,11 @@
 
   @media (max-width: $mobile-width) {
     padding: 0 25px;
+  }
+
+  &--contacts {
+    @media (max-width: $tablet-width) {
+      width: 355px;
+    }
   }
 }

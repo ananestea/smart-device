@@ -2,9 +2,8 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import './modules/accordion';
-import {FocusLock} from './utils/focus-lock';
 import {initAccordions} from './modules/accordions-component/init-accordion';
-import {executeAboutButton} from './modules/read-more';
+import {initReadMoreButon} from './modules/read-more';
 
 // ---------------------------------
 
@@ -26,10 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
     initAccordions();
-    executeAboutButton();
-    const focus = new FocusLock();
-    window.focus = focus;
-    focus.init();
+    initReadMoreButon();
   });
 });
 
