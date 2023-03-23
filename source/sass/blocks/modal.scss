@@ -147,6 +147,7 @@
     border-radius: 3px;
     padding: 15px 25px;
     cursor: pointer;
+    user-select: none;
     display: inline-block;
     border: 1px solid transparent;
 
@@ -249,6 +250,7 @@
       font-size: 16px;
       line-height: 22px;
       color: $color-default-white;
+      opacity: 0.7;
     }
 
     &:hover,
@@ -283,6 +285,7 @@
       font-size: 16px;
       line-height: 22px;
       color: $color-default-white;
+      opacity: 0.7;
     }
 
     &:hover,

@@ -1,6 +1,10 @@
 .advantages {
-  max-width: 1222px;
-  padding: 120px 30px;
+  width: 100%;
+}
+
+.advantages__wrapper {
+  max-width: 1322px;
+  padding: 120px 50px;
   margin: 0 auto;
 
   @media (max-width: $tablet-width) {
@@ -17,12 +21,11 @@
 .advantages__list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 59px;
+  column-gap: 35px;
   row-gap: 30px;
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-left: -29px;
 
   @media (max-width: $tablet-width) {
     margin-left: 0;
