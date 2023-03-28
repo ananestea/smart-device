@@ -9,7 +9,7 @@
   flex-direction: column;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  background-color: rgba($color-default-black, 0.8);
+  background-color: rgba(3, 16, 27, 0.7);
   transform: scale(1.2);
   visibility: hidden;
   opacity: 0;
@@ -94,11 +94,13 @@
     opacity: 0.8;
     display: flex;
     order: 3;
+    user-select: none;
 
     label {
       display: flex;
       align-items: center;
       padding-top: 13px;
+      cursor: pointer;
     }
 
     input {
@@ -129,6 +131,18 @@
           border-top: none;
           transform: rotate(-45deg);
         }
+      }
+
+      &:hover,
+      &:focus {
+        outline: none;
+        border: 1px solid $black-pearl;
+      }
+
+      &:active,
+      &:focus-within {
+        outline: none;
+        background-color: rgba($black-pearl, 0.5);
       }
     }
   }
@@ -243,6 +257,7 @@
     background: rgba(4, 20, 39, 0.15);
     border: 1px solid transparent;
     border-radius: 3px;
+
 
     &::placeholder {
       font-family: $pt-mono;
