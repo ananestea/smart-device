@@ -5,9 +5,13 @@
 }
 
 .navigation__list {
-  display: flex;
-  width: 480px;
-  flex-wrap: wrap;
+  // display: flex;
+  // width: 480px;
+  // flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 225px 225px;
+  gap: 30px;
+  row-gap: 10px;
   justify-content: space-between;
   text-decoration: none;
   list-style: none;
@@ -16,6 +20,9 @@
   margin-left: 16px;
 
   @media (max-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
     width: 70%;
     margin-left: 0;
     justify-content: flex-end;

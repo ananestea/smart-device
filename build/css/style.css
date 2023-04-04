@@ -1110,12 +1110,12 @@ button,
 }
 
 .navigation__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 480px;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 225px 225px;
+  grid-template-columns: 225px 225px;
+  gap: 30px;
+  row-gap: 10px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1691,9 +1691,9 @@ button,
   content: "";
   position: absolute;
   top: 13%;
-  left: 13%;
+  left: 20%;
   display: block;
-  width: 7px;
+  width: 50%;
   height: 5px;
   border: 1px solid #ffffff;
   border-right: none;
@@ -1866,7 +1866,7 @@ button,
   -webkit-column-gap: 85px;
   -moz-column-gap: 85px;
   column-gap: 85px;
-  row-gap: 7%;
+  row-gap: 100px;
 }
 
 .catalog__item {
@@ -2042,10 +2042,14 @@ button,
   text-transform: uppercase;
 }
 
-.about__button:hover,
-.about__button:focus {
+.about__button:hover {
   opacity: 0.8;
   background-color: #041827;
+}
+
+.about__button:focus {
+  opacity: 0.8;
+  background-color: rgb(41, 54, 104);
 }
 
 .about__button:active {
@@ -2114,6 +2118,12 @@ button,
   }
 
   .navigation__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 0;
     width: 70%;
     margin-left: 0;
     -webkit-box-pack: end;
